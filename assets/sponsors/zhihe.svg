@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 80" role="img" aria-labelledby="title desc">
+  <title id="title">志合律师事务所</title>
+  <desc id="desc">志合律师事务所文字标识</desc>
+  <g fill="none" stroke="#ffffff" stroke-width="2">
+    <rect x="3" y="3" width="62" height="62" rx="4" opacity=".9"/>
+    <path d="M18 21h32L18 48h32" stroke-linecap="square" stroke-linejoin="miter"/>
+  </g>
+  <text x="82" y="36" fill="#ffffff" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="25" font-weight="700" letter-spacing="2">志合律师事务所</text>
+  <text x="83" y="57" fill="#8b8b92" font-family="Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="3.2">ZHIHE LAW FIRM</text>
+</svg>

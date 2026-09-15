@@ -1,0 +1,21 @@
+.route-page-enter-active,
+.route-page-leave-active {
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.route-page-enter-from {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.route-page-leave-to {
+  opacity: 0;
+  transform: translateY(-4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-page-enter-active,
+  .route-page-leave-active {
+    transition: none;
+  }
+}

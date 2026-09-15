@@ -1,0 +1,14 @@
+# Development-only files and deployment configuration.
+/archive/
+/dev/
+/tmp/
+/.wrangler/
+/README.md
+/wrangler.jsonc
+/.assetsignore
+/.gitignore
+/package.json
+/package-lock.json
+/**/.git/
+/**/node_modules/
+/assets/images/**/*.jpg
