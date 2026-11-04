@@ -19,6 +19,11 @@ dev/**/*.png
 assets/images/**/*.jpg
 assets/images/**/*.jpeg
 
+# Local assets and engineering notes
+/assets/
+/engineering-notes/
+/工程笔记/
+
 # Local configuration and secrets
 .env
 .env.*
