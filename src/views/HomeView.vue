@@ -77,7 +77,7 @@ usePageEffects()
           <p>We learn by building, testing and competing together — then carry those lessons into the next version of the robot.</p>
           <p class="team-mission"><span>Our mission</span> Inspire more students to explore robotics, take on ambitious technical challenges and grow through FIRST.</p>
           <div class="team-links">
-            <RouterLink class="text-link" :to="{ path: '/seasons/decode' }">Explore the current season ↗</RouterLink>
+            <RouterLink class="text-link" :to="{ path: '/seasons/decode', hash: '#decode-members' }">Meet the current team ↗</RouterLink>
             <a class="text-link" href="#timeline">View seasons ↓</a>
           </div>
         </div>

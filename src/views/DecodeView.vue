@@ -5,6 +5,7 @@ const sections = [
   { id: 'decode-overview', label: '01 / Overview' },
   { id: 'decode-robot', label: '02 / Robot & software' },
   { id: 'decode-records', label: '03 / Competition Record' },
+  { id: 'decode-members', label: '04 / Members' },
 ]
 
 const systems = [
@@ -35,6 +36,21 @@ const moments = [
   ['/assets/images/seasons/decode/微信图片_20260905220113_116_1123.webp', 'AE86 Sustain Award trophy at the 2026 China FTC Championship', 'Sustain Award / China Championship', 'photo-focus-award'],
 ]
 
+const members = [
+  ['hanbo.webp', 'Hanbo Fu', 'Leader'],
+  ['michaelyu.webp', 'Michael Yu', 'Vice Captain'],
+  ['juliez.webp', 'Julie Zhu', 'Finance & Design'],
+  ['jacen.webp', 'Jacen Wang', 'Outreach'],
+  ['hardy.webp', 'Hardy Zhang', 'Outreach'],
+  ['easonzhan.webp', 'Eason Zhan', 'Outreach'],
+  ['wei.webp', 'Wei Yang', 'Engineering & Operator'],
+  ['oscarliu.webp', 'Oscar Liu', 'Planning'],
+  ['justin-wang.webp', 'Justin Wang', 'Media Operations'],
+  ['cherlyn.webp', 'Cherlyn Wang', 'Sponsorship'],
+  ['michael-wu.webp', 'Michael Wu', 'Outreach'],
+  ['ian.webp', 'Ian Qian', 'Outreach'],
+  ['gleb.webp', 'Gleb', 'Programming'],
+]
 </script>
 
 <template>
@@ -97,5 +113,26 @@ const moments = [
       <a class="text-link" href="https://ftc-events.firstinspires.org/2025/team/22389" target="_blank" rel="noopener noreferrer">Official results &amp; awards on FIRST Events ↗</a>
     </section>
 
+    <section id="decode-members" class="archive-section">
+      <p class="section-kicker">04 / Members</p>
+      <section id="decode-roster" class="pt-12 pb-20 bg-black border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto">
+          <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16">
+            <div>
+              <p class="section-kicker mb-5">DECODE Personnel</p>
+              <h2 class="header-font text-5xl md:text-7xl font-black italic uppercase leading-[0.9]">Meet the<br><span class="text-red-600">team.</span></h2>
+            </div>
+            <p class="mono text-[10px] text-zinc-500 uppercase tracking-[0.3em] md:text-right">FTC Team 22389<br>2025–2026 Roster</p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            <article v-for="member in members" :key="member[1]" class="member-card">
+              <img :src="`/assets/images/members/decode/${member[0]}`" class="member-img" loading="lazy" decoding="async" :alt="member[1]">
+              <div class="p-5"><p class="member-role">{{ member[2] }}</p><h3 class="font-bold italic text-lg">{{ member[1] }}</h3></div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </section>
   </SeasonShell>
 </template>
